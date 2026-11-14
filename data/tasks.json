@@ -15,7 +15,7 @@
     "title": "4-week social calendar with drafts (Instagram, TikTok, LinkedIn)",
     "area": "social",
     "due": "2026-11-21",
-    "status": "todo"
+    "status": "done"
   },
   {
     "title": "Weekly pipeline brief from the ERP CRM",
@@ -40,5 +40,11 @@
     "area": "website",
     "due": null,
     "status": "blocked"
+  },
+  {
+    "title": "Film a tracker installation for the 4 Dec behind-the-scenes post (pick a date)",
+    "area": "social",
+    "due": "2026-12-02",
+    "status": "todo"
   }
 ]

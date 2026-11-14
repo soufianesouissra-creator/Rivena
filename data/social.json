@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "id": "p-2026-11-16-intro",
+    "date": "2026-11-16",
+    "platform": "instagram+tiktok",
+    "title": "RIVENA: logiciels marocains pour PME (présentation)",
+    "status": "awaiting_ok",
+    "draft": "social/drafts/2026-W47.md"
+  },
+  {
+    "id": "p-2026-11-18-fleet-yaller",
+    "date": "2026-11-18",
+    "platform": "tiktok+instagram",
+    "title": "Fleet: « Y aller » ouvre Waze vers le véhicule",
+    "status": "awaiting_ok",
+    "draft": "social/drafts/2026-W47.md"
+  },
+  {
+    "id": "p-2026-11-20-erp-signature",
+    "date": "2026-11-20",
+    "platform": "instagram+tiktok",
+    "title": "ERP: devis signé sur téléphone",
+    "status": "awaiting_ok",
+    "draft": "social/drafts/2026-W47.md"
+  },
+  {
+    "id": "p-2026-11-23-fleet-siphon",
+    "date": "2026-11-23",
+    "platform": "tiktok+instagram",
+    "title": "Fleet: plein et siphonnage détectés",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-11-25-erp-simpl",
+    "date": "2026-11-25",
+    "platform": "instagram",
+    "title": "ERP: relevé SIMPL-TVA en un clic",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-11-27-fleet-horaires",
+    "date": "2026-11-27",
+    "platform": "tiktok",
+    "title": "Fleet: alerte démarrage hors horaires",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-11-30-fleet-engins",
+    "date": "2026-11-30",
+    "platform": "tiktok+instagram",
+    "title": "Fleet: heures moteur des engins BTP",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-12-02-erp-relances",
+    "date": "2026-12-02",
+    "platform": "instagram+tiktok",
+    "title": "ERP: relances des factures en retard",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-12-04-coulisses-pose",
+    "date": "2026-12-04",
+    "platform": "tiktok",
+    "title": "Coulisses: pose d'un traceur",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-12-07-fleet-arabe",
+    "date": "2026-12-07",
+    "platform": "tiktok+instagram",
+    "title": "Fleet: arabe, français, anglais",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-12-09-erp-portail",
+    "date": "2026-12-09",
+    "platform": "instagram",
+    "title": "ERP: portail client",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  },
+  {
+    "id": "p-2026-12-11-erp-cloture",
+    "date": "2026-12-11",
+    "platform": "instagram+tiktok",
+    "title": "ERP: clôture, bilan et CPC",
+    "status": "draft",
+    "draft": "social/drafts/2026-W48-W50.md"
+  }
+]
