@@ -1,0 +1,8 @@
+[
+  { "title": "ERP and Fleet roadmaps and changelogs from git history", "area": "products", "due": "2026-11-21", "status": "todo" },
+  { "title": "4-week social calendar with drafts (Instagram, TikTok, LinkedIn)", "area": "social", "due": "2026-11-21", "status": "todo" },
+  { "title": "Weekly pipeline brief from the ERP CRM", "area": "sales", "due": "2026-11-24", "status": "blocked" },
+  { "title": "Support FAQ and draft replies from the ERP and Fleet docs", "area": "support", "due": "2026-11-28", "status": "todo" },
+  { "title": "Morocco competitor and price watch: ERP and fleet tracking", "area": "growth", "due": "2026-11-28", "status": "todo" },
+  { "title": "Website: product pages, pricing, demo booking, SEO", "area": "website", "due": null, "status": "blocked" }
+]

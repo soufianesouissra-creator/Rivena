@@ -1,0 +1,10 @@
+{
+  "name": "rivena-business",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "summary": "node --env-file-if-exists=.env scripts/build-summary.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
