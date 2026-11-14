@@ -4,24 +4,27 @@
     "date": "2026-11-16",
     "platform": "instagram+tiktok",
     "title": "RIVENA: logiciels marocains pour PME (présentation)",
-    "status": "awaiting_ok",
-    "draft": "social/drafts/2026-W47.md"
+    "status": "approved",
+    "draft": "social/drafts/2026-W47.md",
+    "approved": "2026-11-14"
   },
   {
     "id": "p-2026-11-18-fleet-yaller",
     "date": "2026-11-18",
     "platform": "tiktok+instagram",
     "title": "Fleet: « Y aller » ouvre Waze vers le véhicule",
-    "status": "awaiting_ok",
-    "draft": "social/drafts/2026-W47.md"
+    "status": "approved",
+    "draft": "social/drafts/2026-W47.md",
+    "approved": "2026-11-14"
   },
   {
     "id": "p-2026-11-20-erp-signature",
     "date": "2026-11-20",
     "platform": "instagram+tiktok",
     "title": "ERP: devis signé sur téléphone",
-    "status": "awaiting_ok",
-    "draft": "social/drafts/2026-W47.md"
+    "status": "approved",
+    "draft": "social/drafts/2026-W47.md",
+    "approved": "2026-11-14"
   },
   {
     "id": "p-2026-11-23-fleet-siphon",
