@@ -3,10 +3,10 @@
 From the git history of `Traking-fleet` (branch `claude/new-session-2ibknw`). Newest first; client names left out.
 
 ## 2026-11-15
-- *(on branch `claude/fleet-fixes`, not live yet)* Live alerts reach the alert centre and the bell again.
-- *(same branch)* Notification settings: e-mail and push boxes that were never saved now show OFF, as the server treats them.
-- *(same branch)* Arabic interface: reports and the trip PDF export are produced in French instead of failing.
-- *(same branch)* "Send a test" for push sends a real push to your own phones and says why when it cannot.
+- Live alerts reach the alert centre and the bell again.
+- Notification settings: e-mail and push boxes that were never saved now show OFF, as the server treats them.
+- Arabic interface: reports and the trip PDF export are produced in French instead of failing.
+- "Send a test" for push sends a real push to your own phones and says why when it cannot.
 - *(on branch `claude/fleet-retention`, not live yet)* Trips, stops, driving events and hourly/daily summaries older than one year are deleted automatically, for every client (CNDP Délibération 17-2014). Date pickers and history reports stop at the first day still kept and say why. Backups taken before each deploy are kept 30 days.
 
   FAQ entry to add once it is live (draft, needs OK):

@@ -23,7 +23,9 @@
     "summary": "Merge ERP branch claude/portal-deposit into the Vercel production branch: the client portal no longer shows a deducted deposit as still owed (20/20 portal checks pass)",
     "link": "https://github.com/soufianesouissra-creator/Tracker/compare/claude/cc-ap4aj6...claude/portal-deposit",
     "created": "2026-11-15",
-    "status": "open"
+    "status": "done",
+    "decided": "2026-11-15",
+    "outcome": "Approved. Merged into claude/cc-ap4aj6 (merge d6eb7cf; typecheck, lint and 20/20 portal checks pass on the merge). Vercel deploys it from git; live state not checked from here."
   },
   {
     "id": "a-2026-11-15-fleet-fixes",
@@ -31,7 +33,9 @@
     "summary": "Merge Fleet branch claude/fleet-fixes into claude/new-session-2ibknw and deploy to the VPS: live alerts reach the web app, unsaved e-mail/push boxes show OFF, Arabic UI no longer breaks report generation, push test really sends a push (web 1653/1653 tests pass; database tests need CI)",
     "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-fixes",
     "created": "2026-11-15",
-    "status": "open"
+    "status": "done",
+    "decided": "2026-11-15",
+    "outcome": "Approved. claude/new-session-2ibknw fast-forwarded to 021d5e8; the server pulls it within about 10 minutes. Live site not reachable from this environment, so not checked from here."
   },
   {
     "id": "a-2026-11-15-fleet-retention",
@@ -39,7 +43,7 @@
     "summary": "Merge Fleet branch claude/fleet-retention into claude/new-session-2ibknw (after claude/fleet-fixes) and deploy: trips, stops, driving events and hourly/daily summaries older than 1 year are deleted for every client, for good (CNDP 17-2014)",
     "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-retention",
     "created": "2026-11-15",
-    "status": "open",
+    "status": "approved",
     "details": [
       "First run: expected to delete close to nothing, because the data starts in August 2026; only records with a wrong tracker date would go. Not checked on the live database: the count query is in docs/OPERATIONS.md section 4.",
       "Permanent: nothing in the app can bring deleted rows back. The only copy is the backup the deploy takes first; the deploy now stops if that backup fails.",
@@ -50,7 +54,9 @@
       "Merge after claude/fleet-fixes: one import line in the reports form conflicts and is fixed at merge.",
       "Tests: web 1666/1666, API 480 pass (database tests need CI), workers 852 and shared 965 pass; the 2 failing tests already failed before.",
       "After the deploy: add a FAQ entry (draft in products/fleet/changelog.md) and update the privacy page with the sentence in docs/PUBLICATION-STORES.md."
-    ]
+    ],
+    "decided": "2026-11-15",
+    "outcome": "Approved to go live once CI passes (needs the GitHub billing fixed). Rebased on the live fixes (ed9e2f6). The approved location clean-up is being added to the same branch first."
   },
   {
     "id": "a-2026-11-15-fleet-other-locations",
@@ -58,6 +64,8 @@
     "summary": "Fleet: other tables still keep vehicle locations with no time limit. Proposal: after 1 year, clear the location but keep the record for alerts, fuel events, zone visits and machine work sessions; delete driver scores after 1 year like the vehicle summaries; delete webhook copies after 30 days and generated report files after 1 year; keep the machine hour-meter log, fuel card purchases and the audit log (billing and accounting)",
     "link": "https://github.com/soufianesouissra-creator/Traking-fleet/blob/claude/fleet-retention/docs/OPERATIONS.md",
     "created": "2026-11-15",
-    "status": "open"
+    "status": "done",
+    "decided": "2026-11-15",
+    "outcome": "Approved as proposed. Being built on claude/fleet-retention; goes live with the 1-year limit after CI."
   }
 ]

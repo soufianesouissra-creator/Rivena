@@ -72,10 +72,16 @@
     "status": "todo"
   },
   {
-    "title": "Fleet: delete trips, stops and summaries older than 1 year (decided 2026-11-15, CNDP); built and pushed on claude/fleet-retention, waiting for OK and for CI (GitHub billing)",
+    "title": "Fleet: 1-year data limit (approved 2026-11-15) on claude/fleet-retention; merge to production once CI passes (needs GitHub billing fixed)",
     "area": "products",
     "due": "2026-12-05",
     "status": "blocked"
+  },
+  {
+    "title": "Fleet: clear locations older than 1 year (alerts, fuel events, zone visits, machine sessions), delete old driver scores, webhook copies after 30 days and report files after 1 year (approved 2026-11-15); build on claude/fleet-retention",
+    "area": "products",
+    "due": "2026-12-05",
+    "status": "doing"
   },
   {
     "title": "Growth: our own costs (FMC150 price, M2M SIM, installer rate, hosting) to compare with competitor prices",

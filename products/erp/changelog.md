@@ -4,7 +4,7 @@ From the git history of `Tracker` (branch `claude/cc-ap4aj6`). Newest first.
 
 ## 2026-11-15
 - Read-only summary for the agents: `GET /api/agent/resume`, protected by a token (live).
-- *(on branch `claude/portal-deposit`, not live yet)* Client portal: a deducted deposit is no longer shown as still owed.
+- Client portal: a deducted deposit is no longer shown as still owed.
 
 ## 2026-11-14
 - Verification scripts read `.env` themselves.
