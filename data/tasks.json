@@ -18,7 +18,7 @@
     "status": "done"
   },
   {
-    "title": "Weekly pipeline brief from the ERP CRM",
+    "title": "Weekly pipeline brief from the ERP CRM (endpoint live; waiting for the agent token to be saved in the agents' environment)",
     "area": "sales",
     "due": "2026-11-24",
     "status": "blocked"
@@ -72,10 +72,10 @@
     "status": "todo"
   },
   {
-    "title": "Fleet: decide how long trips, stops and daily summaries are kept (CNDP: 1 year max for employee vehicles; today no limit / 5 years)",
+    "title": "Fleet: delete trips, stops and summaries older than 1 year (decided 2026-11-15, CNDP); build on branch claude/fleet-retention, then OK to go live",
     "area": "products",
     "due": "2026-12-05",
-    "status": "todo"
+    "status": "doing"
   },
   {
     "title": "Growth: our own costs (FMC150 price, M2M SIM, installer rate, hosting) to compare with competitor prices",
