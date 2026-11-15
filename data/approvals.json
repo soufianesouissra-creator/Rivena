@@ -32,5 +32,32 @@
     "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-fixes",
     "created": "2026-11-15",
     "status": "open"
+  },
+  {
+    "id": "a-2026-11-15-fleet-retention",
+    "type": "deploy",
+    "summary": "Merge Fleet branch claude/fleet-retention into claude/new-session-2ibknw (after claude/fleet-fixes) and deploy: trips, stops, driving events and hourly/daily summaries older than 1 year are deleted for every client, for good (CNDP 17-2014)",
+    "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-retention",
+    "created": "2026-11-15",
+    "status": "open",
+    "details": [
+      "First run: expected to delete close to nothing, because the data starts in August 2026; only records with a wrong tracker date would go. Not checked on the live database: the count query is in docs/OPERATIONS.md section 4.",
+      "Permanent: nothing in the app can bring deleted rows back. The only copy is the backup the deploy takes first; the deploy now stops if that backup fails.",
+      "Goes slightly beyond \"trips, stops and summaries\": driving events (harsh braking etc.) are also deleted after 1 year. One line to switch off if you want to keep them.",
+      "New: the backups taken before each deploy are deleted after 30 days (setting BACKUP_KEEP_DAYS on the server).",
+      "Users can no longer pick dates older than 1 year in trips, mileage, fuel, analytics and the trip/mileage/fuel/driving reports. A machine's work sessions stay open.",
+      "Wait for CI to pass first (it needs the GitHub billing fixed): the database part was not tested on the real database engine here. If it fails on the server, the site stays up on the old version and the deploy needs a manual retry.",
+      "Merge after claude/fleet-fixes: one import line in the reports form conflicts and is fixed at merge.",
+      "Tests: web 1666/1666, API 480 pass (database tests need CI), workers 852 and shared 965 pass; the 2 failing tests already failed before.",
+      "After the deploy: add a FAQ entry (draft in products/fleet/changelog.md) and update the privacy page with the sentence in docs/PUBLICATION-STORES.md."
+    ]
+  },
+  {
+    "id": "a-2026-11-15-fleet-other-locations",
+    "type": "decision",
+    "summary": "Fleet: other tables still keep vehicle locations with no time limit. Proposal: after 1 year, clear the location but keep the record for alerts, fuel events, zone visits and machine work sessions; delete driver scores after 1 year like the vehicle summaries; delete webhook copies after 30 days and generated report files after 1 year; keep the machine hour-meter log, fuel card purchases and the audit log (billing and accounting)",
+    "link": "https://github.com/soufianesouissra-creator/Traking-fleet/blob/claude/fleet-retention/docs/OPERATIONS.md",
+    "created": "2026-11-15",
+    "status": "open"
   }
 ]

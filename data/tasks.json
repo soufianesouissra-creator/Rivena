@@ -72,10 +72,10 @@
     "status": "todo"
   },
   {
-    "title": "Fleet: delete trips, stops and summaries older than 1 year (decided 2026-11-15, CNDP); build on branch claude/fleet-retention, then OK to go live",
+    "title": "Fleet: delete trips, stops and summaries older than 1 year (decided 2026-11-15, CNDP); built and pushed on claude/fleet-retention, waiting for OK and for CI (GitHub billing)",
     "area": "products",
     "due": "2026-12-05",
-    "status": "doing"
+    "status": "blocked"
   },
   {
     "title": "Growth: our own costs (FMC150 price, M2M SIM, installer rate, hosting) to compare with competitor prices",

@@ -7,6 +7,10 @@ From the git history of `Traking-fleet` (branch `claude/new-session-2ibknw`). Ne
 - *(same branch)* Notification settings: e-mail and push boxes that were never saved now show OFF, as the server treats them.
 - *(same branch)* Arabic interface: reports and the trip PDF export are produced in French instead of failing.
 - *(same branch)* "Send a test" for push sends a real push to your own phones and says why when it cannot.
+- *(on branch `claude/fleet-retention`, not live yet)* Trips, stops, driving events and hourly/daily summaries older than one year are deleted automatically, for every client (CNDP Délibération 17-2014). Date pickers and history reports stop at the first day still kept and say why. Backups taken before each deploy are kept 30 days.
+
+  FAQ entry to add once it is live (draft, needs OK):
+  > **Q. Combien de temps RIVENA conserve-t-il l'historique de mes véhicules ?** Les positions GPS, les trajets, les arrêts, les événements de conduite et les synthèses par heure et par jour de plus d'un an sont supprimés automatiquement, pour tous les clients, conformément à la délibération CNDP n° 17-2014 sur la géolocalisation des véhicules utilisés par les salariés. Les dates de plus d'un an ne peuvent donc plus être choisies dans l'historique, les rapports kilométriques, carburant et de conduite. Les sessions de travail et le relevé horamètre des engins sont conservés.
 
 ## 2026-10-31
 - Edge: other platforms on the same server can add their own Caddy sites.
