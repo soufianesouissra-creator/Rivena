@@ -40,23 +40,25 @@
   {
     "id": "a-2026-11-15-fleet-retention",
     "type": "deploy",
-    "summary": "Merge Fleet branch claude/fleet-retention into claude/new-session-2ibknw (after claude/fleet-fixes) and deploy: trips, stops, driving events and hourly/daily summaries older than 1 year are deleted for every client, for good (CNDP 17-2014)",
+    "summary": "Merge Fleet branch claude/fleet-retention into claude/new-session-2ibknw and deploy: trips, stops, driving events and hourly/daily summaries older than 1 year are deleted for every client, for good (CNDP 17-2014); with the approved clean-up: alerts, fuel events, zone visits and machine sessions keep their record but lose their position after 1 year, driver scores and report files are deleted after 1 year, webhook copies after 30 days",
     "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-retention",
     "created": "2026-11-15",
     "status": "approved",
     "details": [
-      "First run: expected to delete close to nothing, because the data starts in August 2026; only records with a wrong tracker date would go. Not checked on the live database: the count query is in docs/OPERATIONS.md section 4.",
-      "Permanent: nothing in the app can bring deleted rows back. The only copy is the backup the deploy takes first; the deploy now stops if that backup fails.",
+      "Branch at c80c572: the 1-year limit plus the location clean-up, on top of the live fixes (a plain fast-forward, no conflict). Clean-up checked by a plan review and 3 reviewers; their 10 points are fixed, none was serious.",
+      "First run: expected to delete or clear close to nothing, because the data starts in August 2026; only records with a wrong tracker date would go. Not checked on the live database: the count queries are in docs/OPERATIONS.md section 4.",
+      "Permanent: nothing in the app can bring deleted rows or cleared positions back. The only copy is the backup the deploy takes first; the deploy stops if that backup fails.",
       "Goes slightly beyond \"trips, stops and summaries\": driving events (harsh braking etc.) are also deleted after 1 year. One line to switch off if you want to keep them.",
-      "New: the backups taken before each deploy are deleted after 30 days (setting BACKUP_KEEP_DAYS on the server).",
-      "Users can no longer pick dates older than 1 year in trips, mileage, fuel, analytics and the trip/mileage/fuel/driving reports. A machine's work sessions stay open.",
-      "Wait for CI to pass first (it needs the GitHub billing fixed): the database part was not tested on the real database engine here. If it fails on the server, the site stays up on the old version and the deploy needs a manual retry.",
-      "Merge after claude/fleet-fixes: one import line in the reports form conflicts and is fixed at merge.",
-      "Tests: web 1666/1666, API 480 pass (database tests need CI), workers 852 and shared 965 pass; the 2 failing tests already failed before.",
+      "Backups taken before each deploy are deleted after 30 days (setting BACKUP_KEEP_DAYS on the server).",
+      "Users can no longer pick dates older than 1 year in trips, mileage, fuel, analytics, driver scores and the trip/mileage/fuel/driving reports. Old alerts and machine sessions say their position was not kept. The webhook delivery log stops at 30 days.",
+      "Production setup change: report files over 8 MiB get their own storage shared by the API and the workers (until now they could not be saved). Could not be built here (no Docker): after the deploy, check that a large report downloads.",
+      "Not cleared: anti-theft and out-of-hours records (not in your approval, separate question), delivery records (proofs of delivery, transport orders) and a few technical copies (Redis job history, quarantine files, container logs). Full list in docs/OPERATIONS.md section 4.",
+      "Wait for CI to pass first (it needs the GitHub billing fixed): the database parts were run here on a local test database without TimescaleDB, not on the real engine. If it fails on the server, the site stays up on the old version and the deploy needs a manual retry.",
+      "Tests: web 1688/1688, API 500 pass (database tests need CI), workers 892 and shared 971 pass; the 2 failing tests already failed before.",
       "After the deploy: add a FAQ entry (draft in products/fleet/changelog.md) and update the privacy page with the sentence in docs/PUBLICATION-STORES.md."
     ],
     "decided": "2026-11-15",
-    "outcome": "Approved to go live once CI passes (needs the GitHub billing fixed). Rebased on the live fixes (ed9e2f6). The approved location clean-up is being added to the same branch first."
+    "outcome": "Approved to go live once CI passes (needs the GitHub billing fixed). Branch now at c80c572, with the approved location clean-up added and pushed."
   },
   {
     "id": "a-2026-11-15-fleet-other-locations",
@@ -66,6 +68,14 @@
     "created": "2026-11-15",
     "status": "done",
     "decided": "2026-11-15",
-    "outcome": "Approved as proposed. Being built on claude/fleet-retention; goes live with the 1-year limit after CI."
+    "outcome": "Approved as proposed. Built on claude/fleet-retention (c80c572); goes live with the 1-year limit after CI. Anti-theft and out-of-hours records were left out because they were not in the approval: see a-2026-11-15-fleet-theft-calendar-locations."
+  },
+  {
+    "id": "a-2026-11-15-fleet-theft-calendar-locations",
+    "type": "decision",
+    "summary": "Fleet: three more records keep a vehicle's parked position with no time limit: anti-theft arming records, out-of-hours use records (worksite calendar) and the small anti-theft zone drawn around a parked machine. Their alerts are already cleared after 1 year. Proposal: clear their position after 1 year too, record kept, like alerts",
+    "link": "https://github.com/soufianesouissra-creator/Traking-fleet/blob/claude/fleet-retention/docs/OPERATIONS.md#still-kept-with-no-limit",
+    "created": "2026-11-15",
+    "status": "open"
   }
 ]
