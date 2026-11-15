@@ -22,5 +22,13 @@
     "link": "https://github.com/soufianesouissra-creator/Tracker/compare/claude/cc-ap4aj6...claude/portal-deposit",
     "created": "2026-11-15",
     "status": "open"
+  },
+  {
+    "id": "a-2026-11-15-fleet-fixes",
+    "type": "deploy",
+    "summary": "Merge Fleet branch claude/fleet-fixes into claude/new-session-2ibknw and deploy to the VPS: live alerts reach the web app, unsaved e-mail/push boxes show OFF, Arabic UI no longer breaks report generation, push test really sends a push (web 1653/1653 tests pass; database tests need CI)",
+    "link": "https://github.com/soufianesouissra-creator/Traking-fleet/compare/claude/new-session-2ibknw...claude/fleet-fixes",
+    "created": "2026-11-15",
+    "status": "open"
   }
 ]

@@ -2,6 +2,12 @@
 
 From the git history of `Traking-fleet` (branch `claude/new-session-2ibknw`). Newest first; client names left out.
 
+## 2026-11-15
+- *(on branch `claude/fleet-fixes`, not live yet)* Live alerts reach the alert centre and the bell again.
+- *(same branch)* Notification settings: e-mail and push boxes that were never saved now show OFF, as the server treats them.
+- *(same branch)* Arabic interface: reports and the trip PDF export are produced in French instead of failing.
+- *(same branch)* "Send a test" for push sends a real push to your own phones and says why when it cannot.
+
 ## 2026-10-31
 - Edge: other platforms on the same server can add their own Caddy sites.
 

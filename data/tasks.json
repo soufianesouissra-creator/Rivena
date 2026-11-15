@@ -48,10 +48,10 @@
     "status": "todo"
   },
   {
-    "title": "Competitor watch round 2: check the 152 unverified items once the sites are reachable (FMC150 end-of-life first)",
+    "title": "Morocco competitor watch, round 2 (growth/market-watch.md): 70 claims checked; FMC150 is not end of life",
     "area": "growth",
     "due": "2026-11-28",
-    "status": "blocked"
+    "status": "done"
   },
   {
     "title": "ERP: client portal counted the deposit as still owed; fix on branch claude/portal-deposit, needs OK to go live",
@@ -60,9 +60,27 @@
     "status": "doing"
   },
   {
-    "title": "Fleet: live alerts never reach the web app (alert pop-ups, map alert colour); fix on a branch",
+    "title": "Fleet: 4 bugs fixed on branch claude/fleet-fixes (live alerts, notification defaults, Arabic reports, push test); needs OK to go live",
     "area": "products",
     "due": "2026-11-21",
     "status": "doing"
+  },
+  {
+    "title": "Fleet: test one FMC150 with the new base firmware 04.02.05.Rev.05 before the next tracker order (it cannot be downgraded)",
+    "area": "products",
+    "due": "2026-12-01",
+    "status": "todo"
+  },
+  {
+    "title": "Fleet: decide how long trips, stops and daily summaries are kept (CNDP: 1 year max for employee vehicles; today no limit / 5 years)",
+    "area": "products",
+    "due": "2026-12-05",
+    "status": "todo"
+  },
+  {
+    "title": "Growth: our own costs (FMC150 price, M2M SIM, installer rate, hosting) to compare with competitor prices",
+    "area": "growth",
+    "due": "2026-12-05",
+    "status": "blocked"
   }
 ]

@@ -2,12 +2,12 @@
 
 From the git history of `Tracker` (branch `claude/cc-ap4aj6`). Newest first.
 
+## 2026-11-15
+- *(on branch `claude/portal-deposit`, not live yet)* Client portal: a deducted deposit is no longer shown as still owed.
+
 ## 2026-11-14
 - Verification scripts read `.env` themselves.
 - *(on branch `claude/agent-summary`, not live yet)* Read-only summary for the agents: `GET /api/agent/resume`.
-
-## 2026-11-15
-- *(on branch `claude/portal-deposit`, not live yet)* Client portal: a deducted deposit is no longer shown as still owed.
 
 ## 2026-08-22: phone app
 - Installable on iPhone and Android; Android app (TWA) built by CI; APK downloads from the site in one tap.
