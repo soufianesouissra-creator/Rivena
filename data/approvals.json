@@ -14,5 +14,13 @@
     "link": "https://github.com/soufianesouissra-creator/Rivena/settings",
     "created": "2026-11-14",
     "status": "open"
+  },
+  {
+    "id": "a-2026-11-15-erp-portal-deposit",
+    "type": "deploy",
+    "summary": "Merge ERP branch claude/portal-deposit into the Vercel production branch: the client portal no longer shows a deducted deposit as still owed (20/20 portal checks pass)",
+    "link": "https://github.com/soufianesouissra-creator/Tracker/compare/claude/cc-ap4aj6...claude/portal-deposit",
+    "created": "2026-11-15",
+    "status": "open"
   }
 ]

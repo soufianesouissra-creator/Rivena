@@ -24,16 +24,16 @@
     "status": "blocked"
   },
   {
-    "title": "Support FAQ and draft replies from the ERP and Fleet docs",
+    "title": "Support FAQ: 112 answers checked against the ERP and Fleet code (support/faq.md)",
     "area": "support",
     "due": "2026-11-28",
-    "status": "todo"
+    "status": "done"
   },
   {
-    "title": "Morocco competitor and price watch: ERP and fleet tracking",
+    "title": "Morocco competitor watch, round 1 (growth/market-watch.md): 6 facts kept, 152 unverified because sites were blocked",
     "area": "growth",
     "due": "2026-11-28",
-    "status": "todo"
+    "status": "done"
   },
   {
     "title": "Website: product pages, pricing, demo booking, SEO",
@@ -46,5 +46,23 @@
     "area": "social",
     "due": "2026-12-02",
     "status": "todo"
+  },
+  {
+    "title": "Competitor watch round 2: check the 152 unverified items once the sites are reachable (FMC150 end-of-life first)",
+    "area": "growth",
+    "due": "2026-11-28",
+    "status": "blocked"
+  },
+  {
+    "title": "ERP: client portal counted the deposit as still owed; fix on branch claude/portal-deposit, needs OK to go live",
+    "area": "products",
+    "due": "2026-11-21",
+    "status": "doing"
+  },
+  {
+    "title": "Fleet: live alerts never reach the web app (alert pop-ups, map alert colour); fix on a branch",
+    "area": "products",
+    "due": "2026-11-21",
+    "status": "doing"
   }
 ]
