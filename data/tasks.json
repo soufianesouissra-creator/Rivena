@@ -88,5 +88,11 @@
     "area": "growth",
     "due": "2026-12-05",
     "status": "blocked"
+  },
+  {
+    "title": "Website rivena.ma: review done 2026-11-16; fixes wait on Soufiane's answers (which products to show, phone/WhatsApp, company IDs) and on the site source being in its own private repo",
+    "area": "website",
+    "due": null,
+    "status": "blocked"
   }
 ]
